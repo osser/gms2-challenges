@@ -3,6 +3,8 @@
 
 
 strContent = "";
+strContent += "room_height:" + string(room_height) + "\n";
+strContent += "room_width:" + string(room_width) + "\n";
 strContent += "browser_height:" + string(browser_height) + "\n";
 strContent += "browser_width:" + string(browser_width) + "\n";
 strContent += "window_get_height():" + string(window_get_height()) + "\n";
@@ -23,3 +25,23 @@ strContent += "" + "\n";
 strContent += "" + "\n";
 strContent += "" + "\n";
 strContent += "" + "\n";
+
+var __cam = view_get_camera(0);
+tmpX = camera_get_view_x(__cam);
+tmpY = camera_get_view_y(__cam);
+if(keyboard_check(vk_left)){
+	tmpX = camera_get_view_x(__cam) - 5;
+}
+if(keyboard_check(vk_right)){
+	tmpX = camera_get_view_x(__cam) + 5;
+}
+if(keyboard_check(vk_up)){
+	tmpY = camera_get_view_y(__cam) - 5;
+}
+if(keyboard_check(vk_down)){
+	tmpY = camera_get_view_y(__cam) + 5;
+}
+
+if (tmpX < 0) tmpX = 0;
+if (tmpY < 0) tmpY = 0;
+camera_set_view_pos(__cam, tmpX, tmpY); 
