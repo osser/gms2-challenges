@@ -44,8 +44,8 @@
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "inst_3C9B8B34",
-                    "x": 32,
-                    "y": 384,
+                    "x": 64,
+                    "y": 64,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
@@ -56,8 +56,8 @@
                     "name_with_no_file_rename": "inst_3C9B8B34",
                     "objId": "fb53121d-96fe-4492-926d-e5f9c3471105",
                     "rotation": 0,
-                    "scaleX": 1,
-                    "scaleY": 1
+                    "scaleX": 3,
+                    "scaleY": -1
                 }
             ]
         },
@@ -86,7 +86,7 @@
             "animationFPS": 15,
             "animationSpeedType": 0,
             "colour": {
-                "Value": 4278190080
+                "Value": 4283256141
             },
             "hspeed": 0,
             "htiled": false,
@@ -136,14 +136,14 @@
             "hborder": 32,
             "hport": 450,
             "hspeed": -1,
-            "hview": 120,
+            "hview": 400,
             "inherit": false,
             "objId": "00000000-0000-0000-0000-000000000000",
             "vborder": 32,
             "visible": true,
             "vspeed": -1,
             "wport": 800,
-            "wview": 200,
+            "wview": 400,
             "xport": 0,
             "xview": 0,
             "yport": 0,
